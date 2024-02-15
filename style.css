@@ -2,9 +2,34 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #efefef;
 }
 
 .container {
   border: solid 2px red;
   height: 100vh;
+  display: grid;
+  /* grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 3fr; */
+  grid-template-areas:
+    'main main main main sidebar'
+    'main main main main .'
+    'main main main main .';
+  /* grid-column-gap: 20px; */
+  justify-items: stretch;
+  align-items: stretch;
+}
+
+main {
+  margin: 1rem;
+  border-radius: 20px;
+  grid-area: main;
+  background-image: url('./images/happy-family.jpg');
+  background-size: cover;
+  background-position: bottom;
+}
+
+section {
+  grid-area: sidebar;
+  border: solid 1px brown;
 }
