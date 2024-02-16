@@ -10,6 +10,8 @@
   display: grid;
   grid-template-areas:
     'main main main main sidebar'
+    'main main main main sidebar'
+    'main main main main sidebar'
     'main main main main .'
     'main main main main .';
   justify-items: stretch;
@@ -29,21 +31,20 @@ main {
 
 section {
   grid-area: sidebar;
-  border: solid 1px brown;
+  border-radius: 20px;
+  height: 15rem;
 }
 
 .propa {
   background-color: #fff;
   margin-left: 1rem;
-  height: 25rem;
-  width: 32rem;
+  height: 20rem;
+  width: 25rem;
   border-radius: 20px;
 }
 
 .bicolor {
-  /* display: flex;
-  align-items: center; */
-  height: 14.5rem;
+  height: 60%;
   padding: 2.7rem 2.1rem;
   border-radius: 20px 20px 0px 0px;
   background: linear-gradient(180deg, #d5e6f7 0%, #d5adfb 100%);
@@ -51,16 +52,27 @@ section {
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
-  font-size: 2.5rem;
-  line-height: 3.2rem;
-  text-align: justify;
-  /* padding: 0 1.7rem; */
+  font-size: 1.8rem;
+  line-height: 2.5rem;
   color: #133072;
+  text-align: justify;
 }
 
 .bicolor span {
   background-color: #133072;
   color: white;
+}
+
+.img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  height: 40%;
+}
+
+.GE-logo {
+  width: 60%;
 }
 
 .content {
@@ -76,7 +88,59 @@ section {
   color: white;
   background-color: transparent;
   position: fixed;
-  bottom: 1.5rem;
-  left: 25rem;
+  bottom: 2.5rem;
+  left: 19rem;
   font-size: 2.5rem;
+}
+
+.menu {
+  background-color: #fff;
+  margin: 1rem 1rem 0 0;
+}
+
+.menu-logo {
+  height: 25%;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 0 2rem;
+  border-radius: 20px;
+
+  & p {
+    background-color: white;
+    font-size: 1.2rem;
+    font-family: 'Outfit', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: #050831;
+  }
+
+  & img {
+    height: 2.5rem;
+  }
+}
+
+.menu-navbar {
+  height: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #fff;
+  border-radius: 0 20px 20px 0;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  padding-bottom: 0.5rem;
+
+  & a {
+    background-color: transparent;
+    text-decoration: none;
+    color: #133072;
+    font-family: 'Outfit', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
 }
