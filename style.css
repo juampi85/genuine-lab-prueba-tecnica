@@ -6,16 +6,12 @@
 }
 
 .container {
-  border: solid 2px red;
   height: 100vh;
   display: grid;
-  /* grid-template-columns: 3fr 1fr;
-  grid-template-rows: 1fr 3fr; */
   grid-template-areas:
     'main main main main sidebar'
     'main main main main .'
     'main main main main .';
-  /* grid-column-gap: 20px; */
   justify-items: stretch;
   align-items: stretch;
 }
@@ -27,9 +23,60 @@ main {
   background-image: url('./images/happy-family.jpg');
   background-size: cover;
   background-position: bottom;
+  align-items: center;
+  display: flex;
 }
 
 section {
   grid-area: sidebar;
   border: solid 1px brown;
+}
+
+.propa {
+  background-color: #fff;
+  margin-left: 1rem;
+  height: 25rem;
+  width: 32rem;
+  border-radius: 20px;
+}
+
+.bicolor {
+  /* display: flex;
+  align-items: center; */
+  height: 14.5rem;
+  padding: 2.7rem 2.1rem;
+  border-radius: 20px 20px 0px 0px;
+  background: linear-gradient(180deg, #d5e6f7 0%, #d5adfb 100%);
+  font-family: 'Outfit', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2.5rem;
+  line-height: 3.2rem;
+  text-align: justify;
+  /* padding: 0 1.7rem; */
+  color: #133072;
+}
+
+.bicolor span {
+  background-color: #133072;
+  color: white;
+}
+
+.content {
+  display: flex;
+  align-items: end;
+}
+
+.study {
+  font-family: 'Outfit', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  color: white;
+  background-color: transparent;
+  position: fixed;
+  bottom: 1.5rem;
+  left: 25rem;
+  font-size: 2.5rem;
 }
