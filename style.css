@@ -157,7 +157,7 @@ section {
   }
 
   .container {
-    height: 50rem;
+    height: 55rem;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -179,7 +179,7 @@ section {
 
   .propa {
     margin: 0;
-    height: 55%;
+    height: 45%;
     width: 100%;
   }
 
