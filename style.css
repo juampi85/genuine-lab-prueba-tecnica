@@ -87,9 +87,9 @@ section {
   font-style: normal;
   color: white;
   background-color: transparent;
-  position: fixed;
-  bottom: 2.5rem;
-  left: 19rem;
+  position: relative;
+  bottom: -15.5rem;
+  left: -6rem;
   font-size: 2.5rem;
 }
 
@@ -142,5 +142,82 @@ section {
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
+  }
+}
+
+.youtube-video {
+  display: none;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 375px) {
+  section {
+    display: none;
+  }
+
+  .container {
+    height: 50rem;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  main {
+    flex-direction: column;
+    height: 35rem;
+    width: 95vw;
+    background-image: url('./images/happy-family.jpg');
+    background-size: 30rem 21.5rem;
+    background-position: bottom right;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 1rem;
+  }
+
+  .propa {
+    margin: 0;
+    height: 55%;
+    width: 100%;
+  }
+
+  .bicolor {
+    height: 60%;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    padding: 1.5rem 3.3rem;
+    text-justify: inter-word;
+  }
+
+  .study {
+    position: static;
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 1rem;
+  }
+
+  .youtube-video {
+    display: inline-block;
+    background: linear-gradient(180deg, #d5e6f7 0%, #ffffff 37.5%);
+    border-radius: 20px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 95vw;
+
+    & p {
+      font-family: 'Outfit', sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 600;
+      font-style: normal;
+      color: #133072;
+      font-size: 1.6rem;
+      margin: 2rem 2rem 1.5rem 2rem;
+      background-color: transparent;
+    }
+
+    & img {
+      width: 100%;
+    }
   }
 }
