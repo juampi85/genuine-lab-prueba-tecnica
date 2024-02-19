@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #efefef;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+    'main main main main sidebar'
+    'main main main main sidebar'
+    'main main main main sidebar'
+    'main main main main .'
+    'main main main main .';
+  justify-items: stretch;
+  align-items: stretch;
+}
+
+main {
+  margin: 1rem;
+  border-radius: 20px;
+  grid-area: main;
+  background-image: url('../images/happy-family.jpg');
+  background-size: cover;
+  background-position: bottom;
+  align-items: center;
+  display: flex;
+}
+
+section {
+  grid-area: sidebar;
+  border-radius: 20px;
+  height: 15rem;
+}
+
+.propa {
+  background-color: #fff;
+  margin-left: 1rem;
+  height: 20rem;
+  width: 25rem;
+  border-radius: 20px;
+}
+
+.bicolor {
+  height: 60%;
+  padding: 2.7rem 2.1rem;
+  border-radius: 20px 20px 0px 0px;
+  background: linear-gradient(180deg, #d5e6f7 0%, #d5adfb 100%);
+  font-family: 'Outfit', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  color: #133072;
+  text-align: justify;
+}
+
+.bicolor span {
+  background-color: #133072;
+  color: white;
+}
+
+.img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  height: 40%;
+}
+
+.GE-logo {
+  width: 60%;
+}
+
+.content {
+  display: flex;
+  align-items: end;
+}
+
+.study {
+  font-family: 'Outfit', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  color: white;
+  background-color: transparent;
+  position: relative;
+  bottom: -15.5rem;
+  left: -6rem;
+  font-size: 2.5rem;
+}
+
+.menu {
+  background-color: #fff;
+  margin: 1rem 1rem 0 0;
+}
+
+.menu-logo {
+  height: 25%;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 0 2rem;
+  border-radius: 20px;
+
+  & p {
+    background-color: white;
+    font-size: 1.2rem;
+    font-family: 'Outfit', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: #050831;
+  }
+
+  & img {
+    height: 2.5rem;
+  }
+}
+
+.menu-navbar {
+  height: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #fff;
+  border-radius: 0 20px 20px 0;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  padding-bottom: 0.5rem;
+
+  & a {
+    background-color: transparent;
+    text-decoration: none;
+    color: #133072;
+    font-family: 'Outfit', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+}
+
+.youtube-video {
+  display: none;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 430px) {
+  section {
+    display: none;
+  }
+
+  .container {
+    height: 55rem;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  main {
+    flex-direction: column;
+    height: 35rem;
+    width: 95vw;
+    background-image: url('../images/happy-family.jpg');
+    background-size: 30rem 21.5rem;
+    background-position: bottom right;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 1rem;
+  }
+
+  .propa {
+    margin: 0;
+    height: 45%;
+    width: 100%;
+  }
+
+  .bicolor {
+    height: 60%;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    padding: 1.5rem 3.3rem;
+    text-justify: inter-word;
+  }
+
+  .study {
+    position: static;
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 1rem;
+  }
+
+  .youtube-video {
+    display: inline-block;
+    background: linear-gradient(180deg, #d5e6f7 0%, #ffffff 37.5%);
+    border-radius: 20px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 95vw;
+
+    & p {
+      font-family: 'Outfit', sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 600;
+      font-style: normal;
+      color: #133072;
+      font-size: 1.6rem;
+      margin: 2rem 2rem 1.5rem 2rem;
+      background-color: transparent;
+    }
+
+    & img {
+      width: 100%;
+    }
+  }
+}

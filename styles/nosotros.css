@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #efefef;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+    'main main main main sidebar'
+    'main main main main sidebar'
+    'main main main main sidebar'
+    'main main main main .'
+    'main main main main .';
+  justify-items: stretch;
+  align-items: stretch;
+}
+
+section {
+  grid-area: sidebar;
+  border-radius: 20px;
+  height: 15rem;
+}
+
