@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #efefef;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+}
+
+section {
+  border-radius: 20px;
+  height: 15rem;
+}
+
+main {
+  margin: 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 20px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 77vw;
+  height: 95vh;
+  background-image: url('../images/niños.jpg');
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+}
+
+.genuine-logo {
+  height: 4rem;
+  width: 10rem;
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+  border-radius: 2rem;
+  padding: 0.25rem;
+  background-color: #fff;
+}
+
+.cartel-unete {
+  position: absolute;
+  width: 70%;
+  height: 15rem;
+  bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.bicolor {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(217, 172, 237, 0.8099614845938375) 100%
+  );
+  height: 9rem;
+  width: 100%;
+  display: grid;
+  place-content: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  font-family: 'Outfit', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  color: #133072;
+
+  & h1 {
+    background-color: transparent;
+    text-align: center;
+  }
+}
+
+.blanco {
+  width: 100%;
+  height: 100%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.explora {
+  font-family: 'Outfit', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  color: #133072;
+  font-size: larger;
+}
+
+.siguenos {
+  font-family: 'Outfit', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  color: #133072;
+  font-size: small;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+
+  & img {
+    height: 1.5rem;
+  }
+}
+
+.study {
+  position: absolute;
+  bottom: 1rem;
+  font-family: 'Outfit', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  color: white;
+  background-color: transparent;
+  font-size: 1.25rem;
+}
+
+.menu {
+  height: 12rem;
+  background-color: #fff;
+  margin: 1rem 1rem 0 0;
+  width: 18vw;
+}
+
+.menu-logo {
+  height: 25%;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 0 2rem;
+  border-radius: 20px;
+
+  & p {
+    background-color: white;
+    font-size: 1.2rem;
+    font-family: 'Outfit', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: #050831;
+  }
+
+  & img {
+    height: 2.5rem;
+  }
+}
+
+.menu-navbar {
+  height: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #fff;
+  border-radius: 0 20px 20px 0;
+  margin-top: 1rem;
+  margin-left: 2rem;
+
+  & a {
+    background-color: transparent;
+    text-decoration: none;
+    color: #133072;
+    font-family: 'Outfit', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+}
