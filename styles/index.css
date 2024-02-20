@@ -86,6 +86,7 @@ section {
 }
 
 .menu {
+  height: 12rem;
   background-color: #fff;
   margin: 1rem 1rem 0 0;
 }
@@ -116,7 +117,7 @@ section {
 }
 
 .menu-navbar {
-  height: 8rem;
+  height: 6rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -124,7 +125,7 @@ section {
   border-radius: 0 20px 20px 0;
   margin-top: 1rem;
   margin-left: 2rem;
-  padding-bottom: 0.5rem;
+  /* padding-bottom: 0.5rem; */
 
   & a {
     background-color: transparent;
