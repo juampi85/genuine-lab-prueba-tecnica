@@ -7,20 +7,138 @@
 
 .container {
   height: 100vh;
-  display: grid;
-  grid-template-areas:
-    'main main main main sidebar'
-    'main main main main sidebar'
-    'main main main main sidebar'
-    'main main main main .'
-    'main main main main .';
-  justify-items: stretch;
-  align-items: stretch;
+  display: flex;
 }
 
 section {
-  grid-area: sidebar;
+  /* grid-area: sidebar; */
   border-radius: 20px;
   height: 15rem;
 }
 
+main {
+  margin: 1rem;
+  border-radius: 20px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 77vw;
+  background-color: white;
+
+  & img {
+    width: 100%;
+    height: 35%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  & span {
+    width: 70%;
+    background-color: transparent;
+    text-align: center;
+  }
+
+  & p {
+    color: #133072;
+    background-color: transparent;
+    font-family: 'Outfit', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: #133072;
+    font-size: 2.2rem;
+    margin-bottom: 1.25rem;
+  }
+}
+
+.menu {
+  background-color: #fff;
+  margin: 1rem 1rem 0 0;
+  width: 18vw;
+}
+
+.menu-logo {
+  height: 25%;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 0 2rem;
+  border-radius: 20px;
+
+  & p {
+    background-color: white;
+    font-size: 1.2rem;
+    font-family: 'Outfit', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: #050831;
+  }
+
+  & img {
+    height: 2.5rem;
+  }
+}
+
+.menu-navbar {
+  height: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #fff;
+  border-radius: 0 20px 20px 0;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  padding-bottom: 0.5rem;
+
+  & a {
+    background-color: transparent;
+    text-decoration: none;
+    color: #133072;
+    font-family: 'Outfit', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+}
+
+.cards {
+  display: flex;
+  background-color: transparent;
+  justify-content: center;
+  gap: 1rem;
+
+  & span {
+    width: 42%;
+    padding: 0 1rem;
+    height: 15rem;
+    border: solid #133072 2px;
+    border-radius: 20px;
+    text-align: left;
+  }
+
+  & img {
+    height: 4rem;
+    width: 4rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
+
+  & h2 {
+    color: #133072;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: normal;
+    background-color: transparent;
+    margin-left: 1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  & p {
+    font-size: medium;
+    margin-left: 1rem;
+  }
+}
