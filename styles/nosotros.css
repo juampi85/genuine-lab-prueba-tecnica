@@ -5,6 +5,14 @@
   background-color: #efefef;
 }
 
+.navbar {
+  display: none;
+}
+
+.mobile-container {
+  display: none;
+}
+
 .container {
   height: 100vh;
   display: flex;
@@ -83,7 +91,7 @@ main {
 }
 
 .menu-navbar {
-    height: 6rem;
+  height: 6rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -91,7 +99,6 @@ main {
   border-radius: 0 20px 20px 0;
   margin-top: 1rem;
   margin-left: 2rem;
-  /* padding-bottom: 0.5rem; */
 
   & a {
     background-color: transparent;
@@ -140,5 +147,108 @@ main {
   & p {
     font-size: medium;
     margin-left: 1rem;
+  }
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 430px) {
+  .navbar {
+    display: flex;
+    width: 90vw;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+
+    & a {
+      text-decoration: none;
+      color: #133072;
+      font-weight: bolder;
+    }
+  }
+
+  section,
+  .container {
+    display: none;
+  }
+
+  .mobile-container {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background: rgb(187, 235, 255);
+    background: linear-gradient(
+      180deg,
+      rgba(187, 235, 255, 1) 0%,
+      rgba(249, 253, 255, 1) 46%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    border-radius: 20px;
+
+    & h1 {
+      color: #133072;
+      font-family: 'Outfit', sans-serif;
+      font-weight: bold;
+      font-style: normal;
+      background-color: transparent;
+      margin: 1.5rem;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+  }
+
+  iframe {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .mobile-cards {
+    margin-top: 2rem;
+    background-color: transparent;
+  }
+
+  .mob-card {
+    width: 80%;
+    margin: 0 auto;
+    background-color: transparent;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-top: 1rem;
+  }
+
+  .mob-img {
+    padding-top: 1rem;
+    background-color: transparent;
+  }
+
+  .mob-title {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background-color: transparent;
+    color: #133072;
+    font-family: 'Outfit', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  .mob-par {
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background-color: transparent;
+    color: #133072;
+    font-family: 'Outfit', sans-serif;
+    font-style: normal;
+
+    & b {
+      background-color: transparent;
+    }
+  }
+
+  .nosotros-img-mob {
+    width: 100%;
   }
 }

@@ -5,6 +5,10 @@
   background-color: #efefef;
 }
 
+.navbar {
+  display: none;
+}
+
 .container {
   height: 100vh;
   display: flex;
@@ -143,6 +147,20 @@ section {
 
 /* RESPONSIVE */
 @media screen and (max-width: 430px) {
+  .navbar {
+    display: flex;
+    width: 90vw;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 1rem;
+
+    & a {
+      text-decoration: none;
+      color: #133072;
+      font-weight: bolder;
+    }
+  }
+
   section {
     display: none;
   }
