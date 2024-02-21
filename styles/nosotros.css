@@ -150,6 +150,10 @@ main {
   }
 }
 
+.quienes-somos {
+  display: none;
+}
+
 /* RESPONSIVE */
 @media screen and (max-width: 430px) {
   .navbar {
@@ -208,6 +212,7 @@ main {
   .mobile-cards {
     margin-top: 2rem;
     background-color: transparent;
+    margin-bottom: 2rem;
   }
 
   .mob-card {
@@ -249,6 +254,84 @@ main {
   }
 
   .nosotros-img-mob {
-    width: 100%;
+    width: 90%;
+  }
+
+  .quienes-somos {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: white;
+  }
+
+  .quienes-title,
+  .somos,
+  .consulta,
+  .registro-btn,
+  .registro-legal,
+  .registro-paragraph {
+    color: #133072;
+    font-family: 'Outfit', sans-serif;
+    font-style: normal;
+    background-color: transparent;
+  }
+
+  .quienes-title {
+    margin: 1.5rem 1.5rem 0.75rem 1.5rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+
+  .somos {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
+  .consulta {
+    margin-top: 1rem;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .registro-btn {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #133072;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+  }
+
+  .registro-legal {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #d5adfb;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+  }
+
+  .registro-paragraph {
+    font-weight: bold;
+    padding: 0.5rem 4rem;
+  }
+
+  .registro-icon {
+    background-color: transparent;
+    width: 3rem;
+    padding-bottom: 0.25rem;
+  }
+
+  .registro-alumnos {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
   }
 }
