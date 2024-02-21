@@ -129,9 +129,14 @@ main {
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
-  color: white;
   background-color: transparent;
   font-size: 1.25rem;
+
+  & a {
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+  }
 }
 
 .menu {
@@ -201,5 +206,46 @@ main {
       color: #133072;
       font-weight: bolder;
     }
+  }
+
+  .container {
+    width: 100vw;
+    height: 97vh;
+  }
+
+  section {
+    display: none;
+  }
+
+  main {
+    width: 90vw;
+    height: auto;
+    background-position: top;
+  }
+
+  .genuine-logo {
+    right: 7.5rem;
+  }
+
+  .cartel-unete {
+    width: 95%;
+  }
+
+  .bicolor h1 {
+    padding: 0 0.5rem;
+  }
+
+  .explora {
+    padding: 0 0.5rem;
+    text-align: center;
+  }
+
+  .siguenos {
+    padding: 0 0.5rem;
+    text-align: center;
+  }
+
+  .icons {
+    width: 60%;
   }
 }
